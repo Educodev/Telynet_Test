@@ -11,6 +11,15 @@
 		E999596E2A7BF30000AF6915 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E999596D2A7BF30000AF6915 /* ContentView.swift */; };
 		E99959702A7BF30200AF6915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E999596F2A7BF30200AF6915 /* Assets.xcassets */; };
 		E99959732A7BF30200AF6915 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99959722A7BF30200AF6915 /* Preview Assets.xcassets */; };
+		E999597D2A7BF36700AF6915 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E999597C2A7BF36700AF6915 /* ViewModel.swift */; };
+		E99959802A7BF3DD00AF6915 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E999597F2A7BF3DD00AF6915 /* Model.swift */; };
+		E99959832A7BF46D00AF6915 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = E99959822A7BF46D00AF6915 /* SQLite */; };
+		E99959852A7BF4EB00AF6915 /* SQLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99959842A7BF4EB00AF6915 /* SQLManager.swift */; };
+		E999598A2A7BF56D00AF6915 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99959872A7BF56D00AF6915 /* HomeView.swift */; };
+		E999598B2A7BF56D00AF6915 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99959882A7BF56D00AF6915 /* ContactsView.swift */; };
+		E999598C2A7BF56D00AF6915 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99959892A7BF56D00AF6915 /* SetupView.swift */; };
+		E999598F2A7BF5F400AF6915 /* AppStorages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E999598E2A7BF5F400AF6915 /* AppStorages.swift */; };
+		E99959922A7BF96A00AF6915 /* telynetsales-test.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E99959912A7BF96A00AF6915 /* telynetsales-test.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,14 @@
 		E999596D2A7BF30000AF6915 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E999596F2A7BF30200AF6915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E99959722A7BF30200AF6915 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E999597C2A7BF36700AF6915 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		E999597F2A7BF3DD00AF6915 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E99959842A7BF4EB00AF6915 /* SQLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLManager.swift; sourceTree = "<group>"; };
+		E99959872A7BF56D00AF6915 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E99959882A7BF56D00AF6915 /* ContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		E99959892A7BF56D00AF6915 /* SetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		E999598E2A7BF5F400AF6915 /* AppStorages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStorages.swift; sourceTree = "<group>"; };
+		E99959912A7BF96A00AF6915 /* telynetsales-test.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "telynetsales-test.sqlite"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E99959832A7BF46D00AF6915 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +69,11 @@
 		E999596A2A7BF30000AF6915 /* Telynet_Test */ = {
 			isa = PBXGroup;
 			children = (
-				E999596B2A7BF30000AF6915 /* Telynet_TestApp.swift */,
-				E999596D2A7BF30000AF6915 /* ContentView.swift */,
+				E999598D2A7BF5DD00AF6915 /* Storages */,
+				E999597B2A7BF35300AF6915 /* App */,
+				E999597A2A7BF34D00AF6915 /* View */,
+				E99959792A7BF34700AF6915 /* ViewModel */,
+				E999597E2A7BF3CC00AF6915 /* Model */,
 				E999596F2A7BF30200AF6915 /* Assets.xcassets */,
 				E99959712A7BF30200AF6915 /* Preview Content */,
 			);
@@ -65,6 +86,51 @@
 				E99959722A7BF30200AF6915 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E99959792A7BF34700AF6915 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E999597C2A7BF36700AF6915 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E999597A2A7BF34D00AF6915 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E99959882A7BF56D00AF6915 /* ContactsView.swift */,
+				E99959872A7BF56D00AF6915 /* HomeView.swift */,
+				E99959892A7BF56D00AF6915 /* SetupView.swift */,
+				E999596D2A7BF30000AF6915 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E999597B2A7BF35300AF6915 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E999596B2A7BF30000AF6915 /* Telynet_TestApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E999597E2A7BF3CC00AF6915 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E99959912A7BF96A00AF6915 /* telynetsales-test.sqlite */,
+				E999597F2A7BF3DD00AF6915 /* Model.swift */,
+				E99959842A7BF4EB00AF6915 /* SQLManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E999598D2A7BF5DD00AF6915 /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				E999598E2A7BF5F400AF6915 /* AppStorages.swift */,
+			);
+			path = Storages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +149,9 @@
 			dependencies = (
 			);
 			name = Telynet_Test;
+			packageProductDependencies = (
+				E99959822A7BF46D00AF6915 /* SQLite */,
+			);
 			productName = Telynet_Test;
 			productReference = E99959682A7BF30000AF6915 /* Telynet_Test.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +180,9 @@
 				Base,
 			);
 			mainGroup = E999595F2A7BF30000AF6915;
+			packageReferences = (
+				E99959812A7BF46D00AF6915 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			productRefGroup = E99959692A7BF30000AF6915 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +199,7 @@
 			files = (
 				E99959732A7BF30200AF6915 /* Preview Assets.xcassets in Resources */,
 				E99959702A7BF30200AF6915 /* Assets.xcassets in Resources */,
+				E99959922A7BF96A00AF6915 /* telynetsales-test.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +211,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E999596E2A7BF30000AF6915 /* ContentView.swift in Sources */,
+				E999598F2A7BF5F400AF6915 /* AppStorages.swift in Sources */,
+				E99959852A7BF4EB00AF6915 /* SQLManager.swift in Sources */,
+				E999597D2A7BF36700AF6915 /* ViewModel.swift in Sources */,
+				E999598A2A7BF56D00AF6915 /* HomeView.swift in Sources */,
 				E999596C2A7BF30000AF6915 /* Telynet_TestApp.swift in Sources */,
+				E99959802A7BF3DD00AF6915 /* Model.swift in Sources */,
+				E999598C2A7BF56D00AF6915 /* SetupView.swift in Sources */,
+				E999598B2A7BF56D00AF6915 /* ContactsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +419,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E99959812A7BF46D00AF6915 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E99959822A7BF46D00AF6915 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E99959812A7BF46D00AF6915 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E99959602A7BF30000AF6915 /* Project object */;
 }

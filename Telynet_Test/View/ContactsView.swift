@@ -21,7 +21,7 @@ struct ContactsView: View {
                     Spacer()
                     Text(String(contact.budget))
                 }
-                .fontWeight(.light)
+                .font(.system(size: .zero, weight:.light))
             } label: {
                 HStack {
                     Text(contact.name)

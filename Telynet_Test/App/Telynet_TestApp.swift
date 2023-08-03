@@ -18,6 +18,7 @@ struct Telynet_TestApp: App {
             //dependency injection
                 .environmentObject(viewModel)
                 .tint(.purple)
+                .font(.system(size: 18, weight: .bold, design: .serif))
         }
         
     }
